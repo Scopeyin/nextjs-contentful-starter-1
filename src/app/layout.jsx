@@ -10,18 +10,15 @@ export default async function RootLayout({ children }) {
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-PYS90MHM9WC"
         />
-        <Script
-          id="gtag-init"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-PYS90MHM9WC');
-            `,
-          }}
-        />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYS90MH9WC"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PYS90MH9WC');
+          `
+        }} />
       </head>
       <body>
         {children}
